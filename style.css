@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "myfo1";
+    src: url('fonts/Sniglet/Sniglet-Regular.ttf');
+}
+@font-face{
+    font-family: "myfo2";
+    src: url(fonts/Sniglet/Sniglet-ExtraBold.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "myfo1";
+    background-color: antiquewhite;
+}
+.container{
+    width: 1600px;
+    margin: auto;
+}
+.subcontainer{
+    width: 85%;
+    margin: auto;
+}
+svg{
+    margin-top: 10px;
+    fill: antiquewhite;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 35px;
+}
+
+#cookies{
+    width: 285px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    background:#241401;
+    z-index: 1;
+    display: none;
+    border-radius: 15px;
+}
+.cookies{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 24px;
+}
+p{
+    color: antiquewhite;
+    margin-left: 3px;
+}
+
+#cookies-btn{
+    border-radius: 5px;
+    padding: 8px 39px;
+    font-family: "myfo2";
+    cursor: pointer;
+    border: 3px solid ;
+    background-color: antiquewhite;
+    margin: auto;
+    margin-bottom: 10px;
+    color: #241401;
+    font-size: 24px;
+}
+
+#cookies-btn:hover{
+    background-color: rgba(250, 235, 215, 0.828);
+}
+
+@media (max-width:1600px){
+    .container{
+        width: 100%;
+    }
+}
+@media (max-width:1024px){
+    .cookies{
+        padding: 10px 0;
+    }
+}
